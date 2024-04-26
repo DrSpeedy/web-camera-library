@@ -247,6 +247,7 @@
             $captureButtonClass.push("image-capture-button");
             return $('<button>', {
               class: $captureButtonClass.join(" "),
+              type: "button",
               text: "Capture Image"
             }).on('click', captureImage.bind());
         };
@@ -256,6 +257,7 @@
             $retakeButtonClass.push("image-retake-button");
             return $('<button>', {
               class: $retakeButtonClass.join(" "),
+              type: "button",
               text: "Retake Image"
             }).on('click', retakeImage.bind());
         };
@@ -265,6 +267,7 @@
             $okButtonClass.push("image-ok-button");
             return $('<button>', {
               class: $okButtonClass.join(" "),
+              type: "button",
               text: "Ok Image"
             }).on('click', acceptImage.bind());
         };
